@@ -1,0 +1,38 @@
+//
+// Text Links
+//
+@keyframes effect_linedraw {
+  0% {
+      transform: scaleX(1);
+  }
+  100% {
+      transform: scaleX(1) translateX(100%);
+  }
+}
+.effect-linedraw{
+  position: relative;
+  overflow: hidden;
+  &::before{
+      content: "";
+      display: block;
+      position: absolute;
+      height:2px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgb(2,0,36);
+      background: linear-gradient(-90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+      z-index: 0;
+      transform:scaleX(0);
+      transform-origin: left center;
+      animation-name:effect_linedraw;
+      animation-duration: 0.4s;
+    }
+  &:hover{
+    &::before{
+        transform:scaleX(1);
+        transition:transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+        animation:none;
+    }
+  }
+}
