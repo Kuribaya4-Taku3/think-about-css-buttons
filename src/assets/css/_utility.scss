@@ -48,16 +48,3 @@
 		clear: both;
 	}
 }
-
-/* display */
-.pc-only {
-	@media only screen and (max-width: $point_sp) {
-		display: none;
-	}
-}
-.sp-only {
-	display: none;
-	@media only screen and (max-width: $point_sp) {
-		display: block;
-	}
-}
