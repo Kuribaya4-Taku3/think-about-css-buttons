@@ -1,0 +1,28 @@
+block variables
+	- var ROOT_URL = "localhost";
+
+doctype html
+html(lang="ja")
+	block head
+		head
+			block meta
+				meta(charset="utf-8")
+				meta(http-equiv="X-UA-Compatible", content="IE=edge")
+				meta(name="viewport", content="width=device-width, initial-scale=1.0")
+				meta(name="format-detection", content="telephone=no")
+				meta(name="keywords", content=KEYWORDS)
+				meta(name="description", content=DESCRIPTION)
+			block title
+				title #{TITLE}
+			block link
+				link(rel="stylesheet", href=""+DIR+"css/style.css")
+
+	block body
+		body(id=BODYID)
+			#wrap
+				header.header
+					h1 Think About CSS Buttons
+				main
+					block contents
+			block script
+				script(src=""+DIR+"js/common.min.js")

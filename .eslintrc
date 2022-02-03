@@ -1,0 +1,21 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "extends": "eslint:recommended",
+  "rules": {
+    "no-console": 1,
+    "no-debugger": 1,
+    "no-var": 2,
+    "no-undef": 1,
+    "no-unused-vars": 1,
+    "semi": 1,
+    "comma-dangle": 1
+  },
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  }
+}

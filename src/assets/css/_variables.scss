@@ -1,0 +1,40 @@
+//
+// Variables
+//
+
+// font
+// -------------------------
+$font_base: "Helvetica Neue",
+    Arial, 
+    "Hiragino Kaku Gothic ProN", 
+    "Hiragino Sans", 
+    Meiryo, 
+    sans-serif;
+
+
+// mixin 
+// -------------------------
+@mixin tsn{
+  transition: .25s;
+}
+
+
+// animation
+// -------------------------
+@keyframes scroller {
+  0% {
+    transform:translateY(-101%);
+  }
+  20% {
+    transform:translateY(0%);
+  }
+  40% {
+    transform:translateY(0%);
+  }
+  60% {
+    transform:translateY(101%);
+  }
+  100% {
+    transform:translateY(101%);
+  }
+}

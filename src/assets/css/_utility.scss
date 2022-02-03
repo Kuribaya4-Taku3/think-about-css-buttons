@@ -1,0 +1,63 @@
+//
+// Utility
+//
+
+/* --------------------------------------------------
+ 00:  Utility Style
+ -------------------------------------------------- */
+
+/* float */
+.fl { float: left !important;}
+.fr { float: right !important;}
+
+/* align */
+.taL { text-align: left !important;}
+.taR { text-align: right !important;}
+.taC { text-align: center !important;}
+
+/* size */
+.txXS { font-size: 10rem !important;}
+.txSS { font-size: 11rem !important;}
+.txS { font-size: 12rem !important;}
+.txM { font-size: 13rem !important;}
+.txL { font-size: 16rem !important;}
+.txLL { font-size: 18rem !important;}
+.txXL { font-size: 20rem !important;}
+
+/* Margin Padding */
+.noMargin { margin: 0 !important;}
+.noPadding { padding: 0 !important;}
+
+@for $i from 0 through 10 {
+	.mt#{$i * 5} { margin-top: 5px * $i !important; }
+	.mb#{$i * 5} { margin-bottom: 5px * $i !important; }
+	.pt#{$i * 5} { padding-top: 5px * $i !important; }
+	.pb#{$i * 5} { padding-bottom: 5px * $i !important; }
+}
+
+/* Clear */
+.clr {
+	clear: both;
+}
+
+// ClearFix
+.clearfix {
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+/* display */
+.pc-only {
+	@media only screen and (max-width: $point_sp) {
+		display: none;
+	}
+}
+.sp-only {
+	display: none;
+	@media only screen and (max-width: $point_sp) {
+		display: block;
+	}
+}

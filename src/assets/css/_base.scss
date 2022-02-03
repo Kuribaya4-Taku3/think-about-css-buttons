@@ -1,0 +1,85 @@
+//-------base 
+html {
+	font-size: 100%;
+	color: #333;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+body {
+	opacity: 1;
+	font-family: $font_base;
+	font-size: 16px;
+	line-height: 1.6;
+	background-image:
+		linear-gradient(
+			transparent 95%,
+			rgba(244, 244, 244, 1) 5%
+		),
+		linear-gradient(
+			90deg,
+			transparent 95%,
+			rgba(244, 244, 244, 1) 5%
+		);
+		background-size: 20px 20px;
+		background-repeat: repeat;
+}
+
+img  {
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+
+//-------header
+.header{
+	display: block;
+	padding: 48px;
+	h1{
+		color: #002;
+		font-size: 24px;
+	}
+}
+
+//-------main
+main {
+	padding-top: 0px;
+	width: 100%;
+	overflow: hidden;
+}
+section{
+	.inner{
+		width: 100%;
+		padding: 48px;
+		h2{
+			margin-bottom: 1em;
+			font-size: 18px;
+		}
+	}
+}
+.button-boxes{
+	width: 100%;
+	display: flex;
+	flex-wrap:wrap;
+	gap:8px;
+}
+.button-box{
+	background-color: #eee;
+	display: block;
+	width: calc(100% / 6 - 8px);
+	padding-top: calc(100% / 6 - 8px);
+	position: relative;
+	&__inner{
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		padding: 10%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	a{
+		font-size: 1.2vw;
+	}
+}
